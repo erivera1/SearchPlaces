@@ -23,6 +23,7 @@
 		FC7D0E28254A9F9500692B32 /* ViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7D0E27254A9F9500692B32 /* ViewControllerExtension.swift */; };
 		FC7D0E2D254AA79500692B32 /* CustomPointAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7D0E2C254AA79400692B32 /* CustomPointAnnotation.swift */; };
 		FCFC52C2254B0DA20021E5A1 /* PlaceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCFC52C1254B0DA20021E5A1 /* PlaceViewModel.swift */; };
+		FCFC52CE2550456A0021E5A1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCFC52CD2550456A0021E5A1 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		FC7D0E27254A9F9500692B32 /* ViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerExtension.swift; sourceTree = "<group>"; };
 		FC7D0E2C254AA79400692B32 /* CustomPointAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPointAnnotation.swift; sourceTree = "<group>"; };
 		FCFC52C1254B0DA20021E5A1 /* PlaceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceViewModel.swift; sourceTree = "<group>"; };
+		FCFC52CD2550456A0021E5A1 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +172,7 @@
 				FC7D0CEE254932CB00692B32 /* PlaceManager.swift */,
 				FC7D0E2C254AA79400692B32 /* CustomPointAnnotation.swift */,
 				FCFC52C1254B0DA20021E5A1 /* PlaceViewModel.swift */,
+				FCFC52CD2550456A0021E5A1 /* Constants.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -333,6 +336,7 @@
 				FC7D0E2D254AA79500692B32 /* CustomPointAnnotation.swift in Sources */,
 				FC7D0CEF254932CB00692B32 /* PlaceManager.swift in Sources */,
 				FC7D0DB7254983BF00692B32 /* SearchPlaces.xcdatamodeld in Sources */,
+				FCFC52CE2550456A0021E5A1 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

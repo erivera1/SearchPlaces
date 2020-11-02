@@ -16,15 +16,12 @@ protocol PlaceManagerDelegate {
 }
 
 struct PlaceManager {
-    let apiId = "DemoAppId01082013GAL"
-    let appCode = "AJKnXv84fjrb0KIHawS0Tg"
-    let placeURL = "https://places.demo.api.here.com/places/v1/discover/search?"
     var delegate:PlaceManagerDelegate?
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
-    let entityName = "Place"
+    
 
     func fetchPlace(name:String, coordinate:CLLocationCoordinate2D){
-        let urlString = "\(placeURL)q=\(name)&at=\(coordinate.latitude)%2C\(coordinate.longitude)&app_id=\(apiId)&app_code=\(appCode)"
+        let urlString = "\(Constants.placeURL)q=\(name)&at=\(coordinate.latitude)%2C\(coordinate.longitude)&app_id=\(Constants.apiId)&app_code=\(Constants.appCode)"
         performRequest(with: urlString)
     }
     
@@ -105,7 +102,7 @@ struct PlaceManager {
     
     func deleteFromCoreData(){
         let context = ( UIApplication.shared.delegate as! AppDelegate ).persistentContainer.viewContext
-        let deleteFetch = NSFetchRequest<NSFetchRequestResult>(entityName: entityName)
+        let deleteFetch = NSFetchRequest<NSFetchRequestResult>(entityName: Constants.entityName)
         let deleteRequest = NSBatchDeleteRequest(fetchRequest: deleteFetch)
         do{
             try context.execute(deleteRequest)
