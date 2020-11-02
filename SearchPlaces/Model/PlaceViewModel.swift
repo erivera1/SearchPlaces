@@ -14,20 +14,19 @@ struct PlaceViewModel {
     let icon:String
     
     init(items:Items?) {
-        let iconString = "https://download.vcdn.cit.data.here.com/p/d/places2_stg/icons/categories/01.icon"
-        let unknownString = "unknown"
+        
         self.position = items?.position ?? [0.0, 0.0]
         self.distance = items?.distance ?? 0
         var title = items?.title
         if(title == ""){
-            title = unknownString
+            title = Constants.unknownString
         }
-        self.title = title ?? unknownString
+        self.title = title ?? Constants.unknownString
         var icon = items?.icon
         if(icon == ""){
-            icon = iconString
+            icon = Constants.iconString
         }
-        self.icon = icon ?? iconString
+        self.icon = icon ?? Constants.iconString
     }
     
 }

@@ -34,7 +34,6 @@ class HomeViewController: UIViewController {
         self.mapView.showsScale = true
         self.mapView.showsCompass = true
         self.mapView.showsUserLocation = true
-        
     }
 }
 
@@ -44,7 +43,7 @@ extension HomeViewController:MKMapViewDelegate{
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
         guard annotation is CustomPointAnnotation else { return nil }
         let annotations:CustomPointAnnotation = annotation as! CustomPointAnnotation
-        let identifier = "Annotation"
+        let identifier = Constants.annotationIdentifier
         var annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: identifier)
 
         if annotationView == nil {

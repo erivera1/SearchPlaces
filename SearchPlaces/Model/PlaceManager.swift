@@ -109,7 +109,7 @@ struct PlaceManager {
             try context.save()
         }
         catch{
-            print ("There was an error")
+            delegate?.didFailWithError(error: error)
         }
     }
 }
