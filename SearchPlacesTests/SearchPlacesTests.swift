@@ -18,16 +18,22 @@ class SearchPlacesTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testPlaceViewModel(){
+        let item = Items(position: [10.232,123.0123], distance: 100, title: "Mightee mart", icon: "www.icon.com", vicinity: "", averageRating: 0)
+        let placeViewModel = PlaceViewModel(items: item)
+        
+        XCTAssertEqual("Mightee mart", placeViewModel.title)
     }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    
+    func testEmptyTitle(){
+        let item = Items(position: [10.232,123.0123], distance: 100, title: "", icon: "www.icon.com", vicinity: "", averageRating: 0)
+        let placeViewModel = PlaceViewModel(items: item)
+        XCTAssertEqual("unknown", placeViewModel.title)
     }
-
+    
+    func testEmptyIcon(){
+        let item = Items(position: [10.232,123.0123], distance: 100, title: "", icon: "", vicinity: "", averageRating: 0)
+        let placeViewModel = PlaceViewModel(items: item)
+        XCTAssertEqual("https://download.vcdn.cit.data.here.com/p/d/places2_stg/icons/categories/01.icon", placeViewModel.icon)
+    }
 }

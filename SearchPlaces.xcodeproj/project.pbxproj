@@ -9,12 +9,20 @@
 /* Begin PBXBuildFile section */
 		FC7D0CAE254925D200692B32 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7D0CAD254925D200692B32 /* AppDelegate.swift */; };
 		FC7D0CB0254925D200692B32 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7D0CAF254925D200692B32 /* SceneDelegate.swift */; };
-		FC7D0CB2254925D200692B32 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7D0CB1254925D200692B32 /* ViewController.swift */; };
+		FC7D0CB2254925D200692B32 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7D0CB1254925D200692B32 /* HomeViewController.swift */; };
 		FC7D0CB5254925D200692B32 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC7D0CB3254925D200692B32 /* Main.storyboard */; };
 		FC7D0CB7254925D500692B32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC7D0CB6254925D500692B32 /* Assets.xcassets */; };
 		FC7D0CBA254925D500692B32 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC7D0CB8254925D500692B32 /* LaunchScreen.storyboard */; };
 		FC7D0CC5254925D500692B32 /* SearchPlacesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7D0CC4254925D500692B32 /* SearchPlacesTests.swift */; };
 		FC7D0CD0254925D500692B32 /* SearchPlacesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7D0CCF254925D500692B32 /* SearchPlacesUITests.swift */; };
+		FC7D0CE72549312600692B32 /* PlaceData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7D0CE62549312600692B32 /* PlaceData.swift */; };
+		FC7D0CEF254932CB00692B32 /* PlaceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7D0CEE254932CB00692B32 /* PlaceManager.swift */; };
+		FC7D0DB7254983BF00692B32 /* SearchPlaces.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FC7D0DB5254983BF00692B32 /* SearchPlaces.xcdatamodeld */; };
+		FC7D0E1E254A75DF00692B32 /* Place+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7D0E1C254A75DF00692B32 /* Place+CoreDataClass.swift */; };
+		FC7D0E1F254A75DF00692B32 /* Place+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7D0E1D254A75DF00692B32 /* Place+CoreDataProperties.swift */; };
+		FC7D0E28254A9F9500692B32 /* ViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7D0E27254A9F9500692B32 /* ViewControllerExtension.swift */; };
+		FC7D0E2D254AA79500692B32 /* CustomPointAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7D0E2C254AA79400692B32 /* CustomPointAnnotation.swift */; };
+		FCFC52C2254B0DA20021E5A1 /* PlaceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCFC52C1254B0DA20021E5A1 /* PlaceViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +46,7 @@
 		FC7D0CAA254925D200692B32 /* SearchPlaces.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SearchPlaces.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC7D0CAD254925D200692B32 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FC7D0CAF254925D200692B32 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FC7D0CB1254925D200692B32 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FC7D0CB1254925D200692B32 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		FC7D0CB4254925D200692B32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FC7D0CB6254925D500692B32 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FC7D0CB9254925D500692B32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +57,14 @@
 		FC7D0CCB254925D500692B32 /* SearchPlacesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SearchPlacesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC7D0CCF254925D500692B32 /* SearchPlacesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPlacesUITests.swift; sourceTree = "<group>"; };
 		FC7D0CD1254925D500692B32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC7D0CE62549312600692B32 /* PlaceData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceData.swift; sourceTree = "<group>"; };
+		FC7D0CEE254932CB00692B32 /* PlaceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceManager.swift; sourceTree = "<group>"; };
+		FC7D0DB6254983BF00692B32 /* SearchPlaces.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SearchPlaces.xcdatamodel; sourceTree = "<group>"; };
+		FC7D0E1C254A75DF00692B32 /* Place+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Place+CoreDataClass.swift"; sourceTree = "<group>"; };
+		FC7D0E1D254A75DF00692B32 /* Place+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Place+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		FC7D0E27254A9F9500692B32 /* ViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerExtension.swift; sourceTree = "<group>"; };
+		FC7D0E2C254AA79400692B32 /* CustomPointAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPointAnnotation.swift; sourceTree = "<group>"; };
+		FCFC52C1254B0DA20021E5A1 /* PlaceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +115,13 @@
 		FC7D0CAC254925D200692B32 /* SearchPlaces */ = {
 			isa = PBXGroup;
 			children = (
+				FC7D0E26254A9F7F00692B32 /* Extensions */,
+				FC7D0DD9254996D900692B32 /* CoreData */,
 				FC7D0CAD254925D200692B32 /* AppDelegate.swift */,
 				FC7D0CAF254925D200692B32 /* SceneDelegate.swift */,
-				FC7D0CB1254925D200692B32 /* ViewController.swift */,
-				FC7D0CB3254925D200692B32 /* Main.storyboard */,
+				FC7D0CE5254930E800692B32 /* Model */,
+				FC7D0CE02549268500692B32 /* View */,
+				FC7D0CE12549268E00692B32 /* Controller */,
 				FC7D0CB6254925D500692B32 /* Assets.xcassets */,
 				FC7D0CB8254925D500692B32 /* LaunchScreen.storyboard */,
 				FC7D0CBB254925D500692B32 /* Info.plist */,
@@ -126,6 +145,51 @@
 				FC7D0CD1254925D500692B32 /* Info.plist */,
 			);
 			path = SearchPlacesUITests;
+			sourceTree = "<group>";
+		};
+		FC7D0CE02549268500692B32 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FC7D0CB3254925D200692B32 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FC7D0CE12549268E00692B32 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FC7D0CB1254925D200692B32 /* HomeViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FC7D0CE5254930E800692B32 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FC7D0CE62549312600692B32 /* PlaceData.swift */,
+				FC7D0CEE254932CB00692B32 /* PlaceManager.swift */,
+				FC7D0E2C254AA79400692B32 /* CustomPointAnnotation.swift */,
+				FCFC52C1254B0DA20021E5A1 /* PlaceViewModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FC7D0DD9254996D900692B32 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				FC7D0E1C254A75DF00692B32 /* Place+CoreDataClass.swift */,
+				FC7D0E1D254A75DF00692B32 /* Place+CoreDataProperties.swift */,
+				FC7D0DB5254983BF00692B32 /* SearchPlaces.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		FC7D0E26254A9F7F00692B32 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FC7D0E27254A9F9500692B32 /* ViewControllerExtension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,9 +322,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC7D0CB2254925D200692B32 /* ViewController.swift in Sources */,
+				FC7D0CB2254925D200692B32 /* HomeViewController.swift in Sources */,
+				FC7D0E1F254A75DF00692B32 /* Place+CoreDataProperties.swift in Sources */,
+				FC7D0E28254A9F9500692B32 /* ViewControllerExtension.swift in Sources */,
+				FCFC52C2254B0DA20021E5A1 /* PlaceViewModel.swift in Sources */,
 				FC7D0CAE254925D200692B32 /* AppDelegate.swift in Sources */,
+				FC7D0E1E254A75DF00692B32 /* Place+CoreDataClass.swift in Sources */,
 				FC7D0CB0254925D200692B32 /* SceneDelegate.swift in Sources */,
+				FC7D0CE72549312600692B32 /* PlaceData.swift in Sources */,
+				FC7D0E2D254AA79500692B32 /* CustomPointAnnotation.swift in Sources */,
+				FC7D0CEF254932CB00692B32 /* PlaceManager.swift in Sources */,
+				FC7D0DB7254983BF00692B32 /* SearchPlaces.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,7 +438,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -421,7 +493,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -593,6 +665,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FC7D0DB5254983BF00692B32 /* SearchPlaces.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FC7D0DB6254983BF00692B32 /* SearchPlaces.xcdatamodel */,
+			);
+			currentVersion = FC7D0DB6254983BF00692B32 /* SearchPlaces.xcdatamodel */;
+			path = SearchPlaces.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = FC7D0CA2254925D200692B32 /* Project object */;
 }
